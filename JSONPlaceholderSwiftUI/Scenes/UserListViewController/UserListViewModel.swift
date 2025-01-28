@@ -13,13 +13,19 @@ class UserListViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var error: String?
     
+    private let userRepository: UserRepositoryProtocol
+    
+    init(userRepository: UserRepositoryProtocol = UserRepository()) {
+        self.userRepository = userRepository
+    }
+    
     func fetchUsers() {
         isLoading = true
         error = nil
         
         Task {
             do {
-                users = try await NetworkManager.shared.fetchUsers()
+                users = try await userRepository.getUsers()
             } catch {
                 self.error = error.localizedDescription
             }
