@@ -22,6 +22,7 @@
 		8B654C5D2D4957A700756FB6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B654C5C2D4957A700756FB6 /* UserModel.swift */; };
 		8B654C602D495B8700756FB6 /* UserEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B654C5F2D495B8700756FB6 /* UserEndpoints.swift */; };
 		8B654C632D495BA900756FB6 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B654C622D495BA900756FB6 /* UserRepository.swift */; };
+		8B654C662D495F0600756FB6 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B654C652D495F0600756FB6 /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		8B654C5C2D4957A700756FB6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8B654C5F2D495B8700756FB6 /* UserEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoints.swift; sourceTree = "<group>"; };
 		8B654C622D495BA900756FB6 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		8B654C652D495F0600756FB6 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		8B654C4C2D49547C00756FB6 /* UserListViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8B654C642D495EF100756FB6 /* cells */,
 				8B654C4D2D49548B00756FB6 /* UserListViewController.swift */,
 				8B654C512D49566100756FB6 /* UserListViewModel.swift */,
 			);
@@ -205,6 +208,14 @@
 				8B654C622D495BA900756FB6 /* UserRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		8B654C642D495EF100756FB6 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				8B654C652D495F0600756FB6 /* PersonCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +355,7 @@
 				8B654C572D49568F00756FB6 /* UserListDetailViewModel.swift in Sources */,
 				8B654C222D49542400756FB6 /* JSONPlaceholderSwiftUIApp.swift in Sources */,
 				8B654C552D49568700756FB6 /* UserListDetailViewController.swift in Sources */,
+				8B654C662D495F0600756FB6 /* PersonCell.swift in Sources */,
 				8B654C5A2D4956AF00756FB6 /* Network.swift in Sources */,
 				8B654C632D495BA900756FB6 /* UserRepository.swift in Sources */,
 				8B654C4E2D49548B00756FB6 /* UserListViewController.swift in Sources */,
